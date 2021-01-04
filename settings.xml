@@ -1,0 +1,9 @@
+<settings>
+  <servers>
+    <server>
+      <id>artifactory</id>
+      <username>pramodhm@devtools.in</username>
+        <password>Admin#123</password>
+    </server>
+  </servers>
+</settings>
