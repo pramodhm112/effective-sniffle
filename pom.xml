@@ -68,16 +68,16 @@
     </plugins>
   </build>
   
-  <distributionManagement>
+<distributionManagement>
     <repository>
-        <id>artifactory</id>
-        <name>github-maven-test</name>
-        <url>https://jfrogpam.jfrog.io/artifactory/github-maven-test</url>
+        <id>central</id>
+        <name>jfrog-artifactory-pro-releases</name>
+        <url>http://35.223.74.53:8081/artifactory/libs-release-local</url>
     </repository>
     <snapshotRepository>
         <id>snapshots</id>
-        <name>github-maven-test</name>
-        <url>https://jfrogpam.jfrog.io/artifactory/github-maven-test</url>
+        <name>jfrog-artifactory-pro-snapshots</name>
+        <url>http://35.223.74.53:8081/artifactory/libs-release-local</url>
     </snapshotRepository>
 </distributionManagement>
 </project>
