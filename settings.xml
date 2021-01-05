@@ -2,8 +2,22 @@
   <servers>
     <server>
       <id>artifactory</id>
-        <username>pramodhm@devtools.in</username>
-        <password>AP3gkkdXM5nTq4BhzErjfa46pPD</password>
+      <username>admin</username>
+      <password>AP3gkkdXM5nTq4BhzErjfa46pPD</password>
     </server>
   </servers>
+  <profiles>
+    <profile>
+      <repositories>
+        <repository>
+          <id>artifactory</id>
+          <snapshots>
+          <enabled>false</enabled>
+          </snapshots>
+          <name>github-maven-test</name>
+          <url>https://jfrogpam.jfrog.io/artifactory/github-maven-test</url>
+        </repository>
+      </repositories>
+    </profile>
+  </profiles>
 </settings>
