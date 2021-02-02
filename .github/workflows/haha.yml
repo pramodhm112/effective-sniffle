@@ -1,0 +1,20 @@
+name: Mirror Repo
+
+on: [push]
+
+#  schedule:
+    # nightly (0th hour 0th minute of every day)
+#    - cron:  '0 0 * * *'
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Mirror
+      run: |
+        git clone --bare https://github.com/pramodhm112/effective-sniffle.git
+        cd effective-sniffle.git
+        git remote add github "https://pramodh:e722b2b429d9c2a8796d22eccd19e04fe1efb760@35.225.128.129/Sunshine/friendly-parakeet.git"
+        git push --mirror github
+      env:
+        GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
